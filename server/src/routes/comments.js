@@ -24,5 +24,3 @@ router.post('/:id/likes', commentController.likeComment);
 router.delete('/:id/likes', commentController.unlikeComment);
 
 module.exports = router;
-
-

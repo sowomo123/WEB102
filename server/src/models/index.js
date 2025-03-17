@@ -40,35 +40,33 @@ const dataStore = {
       likes: [],
       createdAt: new Date().toISOString()
     });
-     dataStore.videos.push({
-      id: dataStore.nextIds.videos++,
-      title: 'Second Video',
-      description: 'Another awesome video',
-      url: 'https://example.com/video2.mp4',
-      userId: 2,
-      likes: [],
-      createdAt: new Date().toISOString()
-    });
-     // Add some comments
-    dataStore.comments.push({
-      id: dataStore.nextIds.comments++,
-      text: 'Great video!',
-      userId: 2,
-      videoId: 1,
-      likes: [],
-      createdAt: new Date().toISOString()
-    });
-     dataStore.comments.push({
-      id: dataStore.nextIds.comments++,
-      text: 'Thanks for sharing',
-      userId: 1,
-      videoId: 2,
-      likes: [],
-      createdAt: new Date().toISOString()
-    });
-   }
-   
-   
-   module.exports = dataStore;
-   
-   
+    dataStore.videos.push({
+        id: dataStore.nextIds.videos++,
+        title: 'Second Video',
+        description: 'Another awesome video',
+        url: 'https://example.com/video2.mp4',
+        userId: 2,
+        likes: [],
+        createdAt: new Date().toISOString()
+      });
+       // Add some comments
+      dataStore.comments.push({
+        id: dataStore.nextIds.comments++,
+        text: 'Great video!',
+        userId: 2,
+        videoId: 1,
+        likes: [],
+        createdAt: new Date().toISOString()
+      });
+       dataStore.comments.push({
+        id: dataStore.nextIds.comments++,
+        text: 'Thanks for sharing',
+        userId: 1,
+        videoId: 2,
+        likes: [],
+        createdAt: new Date().toISOString()
+      });
+     }
+     
+     
+     module.exports = dataStore;
