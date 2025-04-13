@@ -71,7 +71,7 @@ app.post('/api/students', async (req, res) => {
   });
   
   // Start server
-  const PORT = 5000;
+  const PORT = 5432;
   app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
   });
